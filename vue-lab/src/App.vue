@@ -4,19 +4,17 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <div class="max-w-4xl mx-auto">
-      <nav class="p-4 bg-gray-100 rounded-b-lg shadow-md **flex gap-4**">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-
+  <header class="w-full bg-white shadow-sm mb-5">
+    <div class="wrapper">
+      <nav class="flex justify-center gap-5 py-4 text-sm font-medium text-gray-700">
+        <RouterLink to="/" class="hover:text-[#FF5F5F] transition-colors">Home</RouterLink>
+        <RouterLink to="/about" class="hover:text-[#FF5F5F] transition-colors">About</RouterLink>
+        <RouterLink to="/contact" class="hover:text-[#FF5F5F] transition-colors">Contact</RouterLink>
+        <RouterLink to="/intro" class="hover:text-[#FF5F5F] transition-colors">Intro</RouterLink>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto mt-5">
-    <RouterView />
-  </main>
+  <RouterView />
 </template>
 
